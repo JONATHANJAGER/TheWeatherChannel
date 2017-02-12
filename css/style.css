@@ -1,0 +1,282 @@
+/* @media only screen and (max-width: 500px) {
+  body  { 
+    width: 400px;
+    height: auto;
+   } */
+/* animation for comet */
+
+/* comet shape and color */
+/*.comet {
+	width: 100px;
+	height: 10px;
+	background: white;
+	position: relative;
+	-webkit-aniation: comet 5s infinite;
+	animation: comet 5s infinite;
+	transform: rotate(-37deg);
+	animation-direction: alternate;
+}
+
+/* comet directoin */
+/* @keyframes comet {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(20px, 50px);
+  }
+}
+@-webkit-keyframes comet {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(20px, 50px);
+  }
+}
+/* color charge for comet */
+/*@keyframes comet {
+    0%   {background-color: white;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+@-webkit-keyframes comet {
+    0%   {background-color: white;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+/* comet movement */
+/*@-webkit-keyframes comet {
+    0%   {top: 0px;}
+    25%  {top: 300px;}
+}
+@keyframes comet {
+    0%   {top: 0px;}
+    25%  {top: 500px;}
+}
+
+/* star shine using pulse*/
+.allstars {
+	width: .5px;
+	height: .5px;
+	background: white;
+	position: relative;
+	-webkit-aniation: allstars 2s infinite;
+	animation: allstars 2s infinite;
+	border-radius: 100px;
+	border: .1px solid white;
+	left: 400px;
+	top: 50px;
+}
+.star1 {
+	width: .6px;
+	height: .6px;
+	background: white;
+	position: relative;
+	-webkit-aniation: allstars 3s infinite;
+	animation: allstars 3s infinite;
+	border-radius: 100px;
+	border: .1px solid white;
+	left: 600px;
+	top: 100px;
+}
+.star2 {
+	width: .9px;
+	height: .9px;
+	background: white;
+	position: relative;
+	-webkit-aniation: allstars 1s infinite;
+	animation: allstars 1s infinite;
+	border-radius: 100px;
+	border: .1px solid white;
+	left: 400px;
+	top: 300px;
+}
+.star7 {
+	width: .9px;
+	height: .9px;
+	background: white;
+	position: relative;
+	-webkit-aniation: star5 1s infinite;
+	animation: star5 1s infinite;
+	border-radius: 100px;
+	border: .1px solid white;
+	left: 300px;
+	top: 350px;
+}
+.star3 {
+	width: 3px;
+	height: 2px;
+	background: white;
+	position: relative;
+	-webkit-aniation: allstars 1.5s infinite;
+	animation: allstars 1.5s infinite;
+	border-radius: 100px;
+	border: .5px solid white;
+	right: 200px;
+	top: 200px;
+}
+@keyframes allstars {
+	from { transform: none; }
+	25% { transform: scale(1); }
+	50% { transform: scale(2); }
+
+	to { transform: none; }
+}
+@keyframes allstars {
+	from {box-shadow: 0px 0px 3px 1px white;}
+	50% {box-shadow: 0px 0px 6px 2px white;}
+	100% {box-shadow: 0px 0px 3px 1px white;}
+}
+.star4 {
+	width: 3px;
+	height: 3px;
+	background: white;
+	position: relative;
+	-webkit-aniation: star4 4s infinite;
+	animation: star4 4s infinite;
+	border-radius: 100px;
+	border: .3px solid white;
+	right: 250px;
+	top: 250px;
+}
+@keyframes star4 {
+	from { transform: none; }
+	25% { transform: scale(1); }
+	50% { transform: scale(3); }
+
+	to { transform: none; }
+}
+@keyframes star4 {
+	from {box-shadow: 0px 0px 3px 1px white;}
+	50% {box-shadow: 0px 0px 6px 3px blue;}
+	100% {box-shadow: 0px 0px 3px 2px green;}
+}
+.star5 {
+	width: 2px;
+	height: 2px;
+	background: white;
+	position: relative;
+	-webkit-aniation: star5 4.5s infinite;
+	animation: star5 4.5s infinite;
+	border-radius: 100px;
+	border: .3px solid white;
+	right: 200px;
+	top: 350px;
+}
+@keyframes star5 {
+	from { transform: none; }
+	25% { transform: scale(1); }
+	50% { transform: scale(3); }
+
+	to { transform: none; }
+}
+@keyframes star5 {
+	from {box-shadow: 0px 0px 3px 1px white;}
+	50% {box-shadow: 0px 0px 6px 3px blue;}
+	100% {box-shadow: 0px 0px 3px 2px green;}
+}
+.star6 {
+	width: 5.5px;
+	height: 5.5px;
+	background: white;
+	position: relative;
+	-webkit-aniation: star6 4.5s infinite;
+	animation: star6 4.5s infinite;
+	border-radius: 100px;
+	border: .3px solid white;
+	right: 320px;
+	top: 140px;
+}
+@keyframes star6 {
+	from { transform: none; }
+	25% { transform: scale(1); }
+	50% { transform: scale(3); }
+
+	to { transform: none; }
+}
+@keyframes star6 {
+	from {box-shadow: 0px 0px 3px 1px white;}
+	50% {box-shadow: 0px 0px 6px 4px red;}
+	100% {box-shadow: 0px 0px 3px 3px blue;}
+}
+/* backgound for weather api */
+html {
+	background: url(../images/sky.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	overflow: hidden;
+}
+
+body {
+  
+  
+}
+
+.background {
+	
+	box-sizing: border-box;	
+	
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 20px;
+	color: white;	
+	font-family: 'Tahoma';
+}
+ 
+ form {
+ 	text-align: center;
+ 	display: block;
+ }
+
+.info {
+	font-size: 75px;
+	font-family: impact;
+	color: white;
+}
+
+#temperature {
+	margin-left: 0px;
+	color: red;
+}
+
+#descripture {
+	margin-left: 0px;
+	margin-top: 0px;
+	color: blue;
+}
+
+#humidity {
+	margin-left: 0px;
+	margin-top: 0px;
+	color: gray;
+
+}
+
+#city {
+	margin-left: 0px;
+	margin-top: 0px;
+	color: yellow;
+}
+
+.input_submit {
+	border: 2px #F7E302;
+	height: 30px;
+	width: 90px;
+	padding: 4px;
+	background-color: white;
+}
+
+.finder {
+	height: 24px;
+	width: 190px;
+}
+
